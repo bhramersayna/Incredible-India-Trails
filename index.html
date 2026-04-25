@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incredible India Trails</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav wrap">
+      <div class="brand">Incredible India Trails</div>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">Menu</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#plan">Plan Trip</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content wrap reveal">
+      <p class="eyebrow">Discover. Experience. Celebrate.</p>
+      <h1>Boost Your Next Journey Across India's Most Iconic Destinations</h1>
+      <p class="subtitle">
+        Explore royal palaces, mountain valleys, tropical coastlines, and timeless heritage in one unforgettable travel story.
+      </p>
+      <a href="#destinations" class="cta">Start Exploring</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section wrap reveal" id="destinations">
+      <div class="section-head">
+        <h2>Top Indian Destinations</h2>
+        <p>Handpicked places for culture, nature, adventure, and unforgettable views.</p>
+      </div>
+
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="heritage">Heritage</button>
+        <button class="filter" data-filter="mountains">Mountains</button>
+        <button class="filter" data-filter="beach">Beach</button>
+      </div>
+
+      <div class="grid" id="destinationGrid">
+        <article class="card" data-category="heritage">
+          <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80" alt="Taj Mahal in Agra">
+          <div class="card-content">
+            <h3>Agra, Uttar Pradesh</h3>
+            <p>Witness the timeless beauty of the Taj Mahal and Mughal architecture.</p>
+          </div>
+        </article>
+
+        <article class="card" data-category="heritage">
+          <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1200&q=80" alt="Jaipur city palace and architecture">
+          <div class="card-content">
+            <h3>Jaipur, Rajasthan</h3>
+            <p>Discover forts, palaces, colorful bazaars, and royal desert charm.</p>
+          </div>
+        </article>
+
+        <article class="card" data-category="mountains">
+          <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80" alt="Snowy mountains in Himachal Pradesh">
+          <div class="card-content">
+            <h3>Manali, Himachal Pradesh</h3>
+            <p>Enjoy alpine views, river valleys, and adventure in the Himalayas.</p>
+          </div>
+        </article>
+
+        <article class="card" data-category="beach">
+          <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1200&q=80" alt="Palm beach in Goa">
+          <div class="card-content">
+            <h3>Goa</h3>
+            <p>Relax on sunlit beaches with vibrant nightlife and Portuguese heritage.</p>
+          </div>
+        </article>
+
+        <article class="card" data-category="mountains">
+          <img src="https://images.unsplash.com/photo-1598091383021-15ddea10925d?auto=format&fit=crop&w=1200&q=80" alt="Dal Lake and mountains in Kashmir">
+          <div class="card-content">
+            <h3>Srinagar, Kashmir</h3>
+            <p>Cruise on Dal Lake and admire the valley's breathtaking landscapes.</p>
+          </div>
+        </article>
+
+        <article class="card" data-category="beach">
+          <img src="https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?auto=format&fit=crop&w=1200&q=80" alt="Beach and backwaters in Kerala">
+          <div class="card-content">
+            <h3>Alleppey, Kerala</h3>
+            <p>Float through calm backwaters and soak in Kerala's green beauty.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experiences reveal" id="experiences">
+      <div class="wrap">
+        <div class="section-head light">
+          <h2>Experiences That Inspire</h2>
+          <p>From spiritual mornings to desert nights, every journey in India feels unique.</p>
+        </div>
+        <div class="experience-grid">
+          <div class="experience">
+            <h3>Culture Trails</h3>
+            <p>Visit temples, forts, festivals, and local markets full of colors and stories.</p>
+          </div>
+          <div class="experience">
+            <h3>Nature Escapes</h3>
+            <p>Explore tea gardens, mountain passes, waterfalls, and wildlife sanctuaries.</p>
+          </div>
+          <div class="experience">
+            <h3>Food Journeys</h3>
+            <p>Taste rich Indian cuisines across regions, from street food to royal thalis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap reveal" id="plan">
+      <div class="section-head">
+        <h2>Plan Your Indian Adventure</h2>
+        <p>Tell us your interest and season to get a quick travel suggestion.</p>
+      </div>
+
+      <form class="planner" id="plannerForm">
+        <label>
+          Travel Style
+          <select id="style" required>
+            <option value="">Choose one</option>
+            <option value="heritage">Heritage</option>
+            <option value="mountains">Mountains</option>
+            <option value="beach">Beach</option>
+          </select>
+        </label>
+
+        <label>
+          Preferred Season
+          <select id="season" required>
+            <option value="">Choose one</option>
+            <option value="winter">Winter</option>
+            <option value="summer">Summer</option>
+            <option value="monsoon">Monsoon</option>
+          </select>
+        </label>
+
+        <button type="submit">Get Suggestion</button>
+      </form>
+
+      <div class="result" id="resultBox" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made to promote Indian tourism and unforgettable travel stories.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
